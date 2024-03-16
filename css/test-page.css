@@ -19,7 +19,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     background: rgb(253,156,232);
@@ -31,8 +31,8 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     max-height: 0%;
     transform: scale3d(0.25, 0.25, 0.25);
 }
@@ -72,13 +72,13 @@ body {
     grid-template-areas: 
       "button-1 button-1"
       "button-2 button-2"
-      "button-3 button-3"
-      "button-4 button-4"
-      "button-5 button-5"
-      "button-6 button-6";
+      "button-2 button-2"
+      "button-2 button-2"
+      "button-2 button-2"
+      "button-2 button-2";
     background-color: #FFFFFF;
-    width: 450px;
-    height: 500px;
+    width: 750px;
+    height: 800px;
     border-radius: 20px;
     border: solid var(--light-mode2-primary);
     color: var(--light-mode2-secondary);
@@ -97,98 +97,146 @@ body {
     border-radius: 15px 15px 0px 0px;
 }
 
-.button-1 p { 
-    grid-area: button-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
+.survey-page {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
 
 .button-2 { 
-    grid-area: button-2; 
+    grid-area: button-2;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
     transition: all 500ms;
-    cursor: pointer;
 }
 .button-3 { 
-    grid-area: button-3; 
+    grid-area: button-2;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
     transition: all 500ms;
-    cursor: pointer;
 }
 .button-4 { 
-    grid-area: button-4; 
+    grid-area: button-2;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
     transition: all 500ms;
-    cursor: pointer;
 }
 .button-5 { 
-    grid-area: button-5; 
+    grid-area: button-2;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
     transition: all 500ms;
-    cursor: pointer;
 }
-.button-6 { 
-    grid-area: button-6; 
+.button-6 {
+    grid-area: button-2;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    border-radius: 0px 0px 20px 20px;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
     transition: all 500ms;
-    cursor: pointer;
+}
+.button-7 {
+    grid-area: button-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
+    transition: all 500ms;
+}
+.button-8 {
+    grid-area: button-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
+    transition: all 500ms;
+}
+.button-9 {
+    grid-area: button-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
+    transition: all 500ms;
+}
+.button-10 {
+    grid-area: button-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
+    transition: all 500ms;
+}
+.button-11 {
+    grid-area: button-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: large;
+    margin: 10px;
+    padding-left: 10px;
+    transition: all 500ms;
+}
+.wrapper{
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+}
+.button-2 input[type="checkbox"]{
+    padding-right: 100px;
 }
 
-.button-2:hover { 
-    grid-area: button-2; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(253,156,232,0.5);
-    font-size: large;
-    transition: all 500ms;
-}
-.button-3:hover { 
-    grid-area: button-3; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(253,156,232,0.5);
-    font-size: large;
-    transition: all 500ms;
-}
-.button-4:hover { 
-    grid-area: button-4; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(253,156,232,0.5);
-    font-size: large;
-    transition: all 500ms;
-}
-.button-5:hover { 
-    grid-area: button-5; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(253,156,232,0.5);
-    font-size: large;
-    transition: all 500ms;
-}
-.button-6:hover { 
-    grid-area: button-6; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(253,156,232,0.5);
-    font-size: large;
-    transition: all 500ms;
-}
+.page-button {
+    background: var(--light-mode2-primary);
+    background-image: -webkit-linear-gradient(top, var(--light-mode2-primary), var(--light-mode2-secondary));
+    background-image: -moz-linear-gradient(top, var(--light-mode2-primary), var(--light-mode2-secondary));
+    background-image: -ms-linear-gradient(top, var(--light-mode2-primary), var(--light-mode2-secondary));
+    background-image: -o-linear-gradient(top, var(--light-mode2-primary), var(--light-mode2-secondary));
+    background-image: linear-gradient(to bottom, var(--light-mode2-primary), var(--light-mode2-secondary));
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .page-button:hover {
+    background: var(--light-mode2-primary);
+    background-image: -webkit-linear-gradient(top, var(--light-mode2-secondary), var(--light-mode2-primary));
+    background-image: -moz-linear-gradient(top, var(--light-mode2-secondary), var(--light-mode2-primary));
+    background-image: -ms-linear-gradient(top, var(--light-mode2-secondary), var(--light-mode2-primary));
+    background-image: -o-linear-gradient(top, var(--light-mode2-secondary), var(--light-mode2-primary));
+    background-image: linear-gradient(to bottom, var(--light-mode2-secondary), var(--light-mode2-primary));
+    text-decoration: none;
+  }

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Edater's Paradise!</title>
+  <link rel="stylesheet" href="./css/test-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="node_modules\animejs\lib\anime.min.js"></script>
+  <script src="js\test.js"></script>
+</head>
+
+<body>
+
+  <div class="outer-nav">
+    <div class="nav-box">
+      <div class="button-1">
+        <h4>Are you an Edater? The Test</h4>
+        <a href="./index.html">Home</a>
+      </div>
+      <div class="wrapper">
+        <div class="survey-page visible">
+          <div class="button-2">
+            <div class="div">1.</div>
+            <input type="checkbox" id="page1-question1">
+            <div class="test">Have you ever flirted online?</div>
+          </div>
+          <div class="button-3">
+            <div class="div">2.</div>
+            <input type="checkbox" id="page1-question2">
+            <div class="test">Do you use Discord or Snapchat as your main form of communication?</div>
+          </div>
+          <div class="button-4">
+            <div class="div">3.</div>
+            <input type="checkbox" id="page1-question3">
+            <div class="test">Do you use or hear "uwu's"?</div>
+          </div>
+          <div class="button-5">
+            <div class="div">4.</div>
+            <input type="checkbox" id="page1-question4">
+            <div class="test">Do you use or hear barking and meowing?</div>
+          </div>
+          <div class="button-6">
+            <div class="div">5.</div>
+            <input type="checkbox" id="page1-question5">
+            <div class="test">Ever matched usernames with someone?</div>
+          </div>
+          <div class="button-7">
+            <div class="div">6.</div>
+            <input type="checkbox" id="page1-question6">
+            <div class="test">Ever matched profile pictures with someone?</div>
+          </div>
+          <div class="button-8">
+            <div class="div">7.</div>
+            <input type="checkbox" id="page1-question7">
+            <div class="test">Met someone online but only made it "official" when you met IRL?</div>
+          </div>
+          <div class="button-9">
+            <div class="div">8.</div>
+            <input type="checkbox" id="page1-question8">
+            <div class="test">Have you said "I love you" within the first month of meeting someone?</div>
+          </div>
+          <div class="button-10">
+            <div class="div">9.</div>
+            <input type="checkbox" id="page1-question9">
+            <div class="test">Ever sent explicit pictures to someone you met online?</div>
+          </div>
+          <div class="button-11">
+            <div class="div">10.</div>
+            <input type="checkbox" id="page1-question10">
+            <div class="test">Have you ever felt down when you've not been able to talk for a while?</div>
+          </div>
+          <button class="page-button" onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="survey-page">
+          <div class="button-2">
+            <div class="div">11.</div>
+            <input type="checkbox" id="page2-question1">
+            <div class="test">Have you felt emotionally attached to someone you've only known online?</div>
+          </div>
+          <div class="button-3">
+            <div class="div">12.</div>
+            <input type="checkbox" id="page2-question2">
+            <div class="test">Have you ever done dirty talk while playing a game together?</div>
+          </div>
+          <div class="button-4">
+            <div class="div">13.</div>
+            <input type="checkbox" id="page2-question3">
+            <div class="test">Do you watch movies together in call?</div>
+          </div>
+          <div class="button-5">
+            <div class="div">14.</div>
+            <input type="checkbox" id="page2-question4">
+            <div class="test">Have you screenshared your game to them?</div>
+          </div>
+          <div class="button-6">
+            <div class="div">15.</div>
+            <input type="checkbox" id="page2-question5">
+            <div class="test">Have you used couple nicknames for each other?</div>
+          </div>
+          <div class="button-7">
+            <div class="div">16.</div>
+            <input type="checkbox" id="page2-question6">
+            <div class="test">Have you stalked their social media?</div>
+          </div>
+          <div class="button-8">
+            <div class="div">17.</div>
+            <input type="checkbox" id="page2-question7">
+            <div class="test">Do you get excited when you get a notification hoping that it's from them?</div>
+          </div>
+          <div class="button-9">
+            <div class="div">18.</div>
+            <input type="checkbox" id="page2-question8">
+            <div class="test">Ever been jealous over them playing video games with someone else?</div>
+          </div>
+          <div class="button-10">
+            <div class="div">19.</div>
+            <input type="checkbox" id="page2-question9">
+            <div class="test">Ever forced your voice when speaking in a VC?</div>
+          </div>
+          <div class="button-11">
+            <div class="div">20.</div>
+            <input type="checkbox" id="page2-question10">
+            <div class="test">Have you ever been on a custom game date?</div>
+          </div>
+          <button class="page-button" onclick="prevPage()">Previous</button>
+          <button class="page-button" onclick="nextPage()">Next</button>
+        </div>
+        
+        <div class="survey-page">
+          <div class="button-2">
+            <div class="div">21.</div>
+            <input type="checkbox" id="page3-question1">
+            <div class="test">Have you ever sent a love letter or poem to someone you've only known online?</div>
+          </div>
+          <div class="button-3">
+            <div class="div">22.</div>
+            <input type="checkbox" id="page3-question2">
+            <div class="test">Have you ever slept on call?</div>
+          </div>
+          <div class="button-4">
+            <div class="div">23.</div>
+            <input type="checkbox" id="page3-question3">
+            <div class="test">Have you ever gifted or been gifted Discord nitro?</div>
+          </div>
+          <div class="button-5">
+            <div class="div">24.</div>
+            <input type="checkbox" id="page3-question4">
+            <div class="test">Have you ever left a group to specifically duo with someone?</div>
+          </div>
+          <div class="button-6">
+            <div class="div">25.</div>
+            <input type="checkbox" id="page3-question5">
+            <div class="test">Have you ever matched in-game cosmetics with someone?</div>
+          </div>
+          <div class="button-7">
+            <div class="div">26.</div>
+            <input type="checkbox" id="page3-question6">
+            <div class="test">Developed feelings for or had a crush on someone online?</div>
+          </div>
+          <div class="button-8">
+            <div class="div">27.</div>
+            <input type="checkbox" id="page3-question7">
+            <div class="test">Had a spotify listening party together?</div>
+          </div>
+          <div class="button-9">
+            <div class="div">28.</div>
+            <input type="checkbox" id="page3-question8">
+            <div class="test">Been in call with them for 12 hours or more?</div>
+          </div>
+          <div class="button-10">
+            <div class="div">29.</div>
+            <input type="checkbox" id="page3-question9">
+            <div class="test">Ever referred to them with their first name and your last name?</div>
+          </div>
+          <div class="button-11">
+            <div class="div">30.</div>
+            <input type="checkbox" id="page3-question10">
+            <div class="test">Ever lied about your appearance?</div>
+          </div>
+          <button class="page-button" onclick="prevPage()">Prev</button>
+          <button class="page-button" onclick="calculateTally()">Calc</button>
+        </div>
+        <div class="survey-page">
+          <div>
+            Tally: <span id="tally">0</span>
+            <span id="are-you-an-edater">0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="box">
+      <div id="sanrio"><img src="images\cute sanrio.png"></div>
+      <div id="kuromi"><img src="images\kuromi.png"></div>
+      <div id="sage"><img src="images\sage.jpg"></div>
+    </div>
+  </div>
+</body>
+
+</html>
